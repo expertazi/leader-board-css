@@ -1,0 +1,238 @@
+/* Common Style Start Here */
+body {
+  background-color: #f3f1ff;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+.container {
+  width: 870px;
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 30px;
+  margin-top: 30px;
+}
+/* Common Style End Here */
+header {
+  background-color: #562eff;
+  display: flex;
+  justify-content: center;
+}
+.head-container {
+  width: 870px;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  height: 45px;
+}
+.logo-area {
+  display: flex;
+  align-items: center;
+}
+.logo-area img {
+  width: 40.42px;
+  height: 51px;
+}
+.logo-title {
+  color: #fff;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  margin-left: 16px;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+nav a {
+  color: #fff;
+  margin: 0 25px;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+/* Header style end From Here  */
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.top-h2-title {
+  color: #562eff;
+  font-weight: 500;
+  font-size: 24px;
+}
+.player {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.player-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.player-info h2 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.player-info img {
+  width: 56px;
+  height: 56px;
+  margin-right: 16px;
+}
+
+hr {
+  border: 1px solid #d1d1d1;
+}
+
+/* Top Blog Style Here  */
+
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.blog {
+  display: flex;
+  margin-bottom: 26px;
+}
+.blog-info {
+  margin-left: 13px;
+}
+.blog img {
+  width: 224px;
+}
+.blog-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 34px;
+}
+.blog-author {
+  color: #9f9f9f;
+}
+.blog-author span {
+  color: #562eff;
+}
+
+/* Latest Course Style Start From Here  */
+.latest-course-section {
+  margin-bottom: 20px;
+}
+.courses {
+  display: flex;
+  justify-content: space-between;
+}
+.course {
+  filter: drop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05));
+  background-color: #fff;
+  padding: 11px;
+  width: 252.42px;
+}
+.course img {
+  width: 250px;
+}
+.course-title {
+  font-weight: 500;
+  font-size: 20.0336px;
+  line-height: 23px;
+}
+.course-author {
+  font-weight: normal;
+  font-size: 14.6913px;
+  line-height: 17px;
+  color: #ed6b4f;
+}
+.course-review-overview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.filled {
+  color: #ffc014;
+}
+.empty {
+  color: #aeaeae;
+  opacity: 0.25;
+}
+.course-duration {
+  background-color: #ffe4e8;
+  border-radius: 5px;
+  width: 94.83px;
+  height: 29.38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.course-duration p {
+  padding: 0;
+  margin: 0;
+}
+/* Latest Course Style End From Here  */
+
+/* Here is the Responsive  */
+/* Media Quaries For Mobiles */
+@media only screen and (max-width: 668px) {
+  .head-container {
+    width: 100%;
+    display: block;
+    height: 100%;
+  }
+
+  .logo-area {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  nav img {
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .player {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+  }
+  .player-info {
+    justify-content: center;
+  }
+  .blog {
+    display: block;
+    text-align: center;
+  }
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .course {
+    margin-bottom: 20px;
+  }
+  .courses {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* Media Quaries For Tablets */
+@media only screen and (min-width: 668px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .blog {
+    justify-content: center;
+  }
+  .main-course {
+    display: flex;
+    justify-content: center;
+  }
+  .course {
+    margin-bottom: 25px;
+  }
+  .courses {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+  }
+}
